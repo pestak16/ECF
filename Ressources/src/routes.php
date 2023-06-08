@@ -9,7 +9,7 @@ $router->map( 'GET', '/marques', function() {
     (new BrandController())->index();
 });
 
-$router->map( 'GET', '/marques/add', function() {
+$router->map( 'GET|POST', '/marques/add', function() {
     (new BrandController())->add();
 });
 
